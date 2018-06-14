@@ -45,9 +45,9 @@ public class EncryptionApplication {
 
 	public static void main(String[] args) {
 		String key = "This is a secret";
-		File inputFile = new File("src/main/resources/catalogo.pdf");
-		File encryptedFile = new File("src/main/resources/catalogo.encrypted");
-		File decryptedFile = new File("src/main/resources/decrypted-catalogo.pdf");
+		File inputFile = new File("C:/Users/shraddha/Downloads/catalogo.pdf");
+		File encryptedFile = new File("C:/Users/shraddha/Downloads/catalogo.encrypted");
+		File decryptedFile = new File("C:/Users/shraddha/Downloads/decrypted-catalogo.pdf");
 			
 		try {
 			EncryptionApplication.fileProcessor(Cipher.ENCRYPT_MODE,key,inputFile,encryptedFile);

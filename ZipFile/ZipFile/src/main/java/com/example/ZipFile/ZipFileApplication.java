@@ -15,8 +15,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ZipFileApplication {
 
 	public static void main(String[] args) throws IOException {
-		 List<String> srcFiles = Arrays.asList("src/main/resources/catalogo.pdf", "src/main/resources/constants.docx");
-	        FileOutputStream fos = new FileOutputStream("multiCompressed.zip");
+		 List<String> srcFiles = Arrays.asList("C:/Users/shraddha/Downloads/catalogo.pdf", "C:/Users/shraddha/Downloads/constants.docx","C:/Users/shraddha/Downloads/Document.docx");
+	        FileOutputStream fos = new FileOutputStream("C:/Users/shraddha/Downloads/multiCompressed.zip");
 	        ZipOutputStream zipOut = new ZipOutputStream(fos);
 	        for (String srcFile : srcFiles) {
 	            File fileToZip = new File(srcFile);
